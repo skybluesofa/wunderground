@@ -5,11 +5,13 @@
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/skybluesofa/wunderground",
-    "authors": [{
-        "name": "Dave Rogers",
-        "email": "connect@skybluesofa.com",
-        "homepage": "http://skybluesofa.com/"
-    }],
+    "authors": [
+        {
+            "name": "Dave Rogers",
+            "email": "connect@skybluesofa.com",
+            "homepage": "http://skybluesofa.com/"
+        }
+    ],
     "require": {
         "php": ">=5.3.0",
         "vlucas/phpdotenv": "dev-master"

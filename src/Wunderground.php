@@ -53,8 +53,13 @@ class Wunderground
      * @param string $key API Key
      * @throws InvalidArgumentException if an empty API key is provided.
      */
-    function __construct($key, $state=null, $cityOrZip=null)
+    function __construct($key=null, $state=null, $cityOrZip=null)
     {
+        if (empty($key)) {
+            $dotenv = new Dotenv\Dotenv(__DIR__);
+            $dotenv->load();
+            $key = getenv('WUNDERGROUND_API_KEY');
+        }
         if (empty($key)) {
             throw new InvalidArgumentException('Wunderground class requires a valid API key');
         }
