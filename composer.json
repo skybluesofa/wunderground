@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Skybluesofa\\Wunderground\\": "src\"
+            "Skybluesofa\\Wunderground\\": "src/"
         }
     }
 }
