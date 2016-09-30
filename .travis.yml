@@ -1,0 +1,17 @@
+language: php
+
+php:
+  - 5.6
+
+addons:
+    code_climate:
+        repo_token: f0241ea01263f408b06a42deb64e316a75f20ae0e474f9fb19f8133591a4ecc8
+
+before_script:
+  - composer install --no-interaction --prefer-source
+
+script:
+  - phpunit --coverage-text --verbose --configuration tests/phpunit.xml
+
+after_script:
+  - vendor/bin/test-reporter
