@@ -1,5 +1,8 @@
 <?php
 class WundergroundTest extends PHPUnit_Framework_TestCase {
+	function test() {
+		$this->assertTrue(true);
+	}
 	/*
 	function test_january_object() {
 		$this->assertFileExists('../src/Parser/Month/En/Us/January.php');
