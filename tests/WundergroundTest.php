@@ -1,7 +1,6 @@
 <?php
-use Skybluesofa\OnThisDay\Events;
-
-class WeatherTweetTest extends PHPUnit_Framework_TestCase {
+class WundergroundTest extends PHPUnit_Framework_TestCase {
+	/*
 	function test_january_object() {
 		$this->assertFileExists('../src/Parser/Month/En/Us/January.php');
 		$this->assertContains ("New Year's Day", Events::get('1/1/2016'));
@@ -25,6 +24,6 @@ class WeatherTweetTest extends PHPUnit_Framework_TestCase {
 	function test_december_object () {
 		$this->assertFileExists('../src/Parser/Month/En/Us/December.php');
 		$this->assertContains ("New Year's Eve", Events::get('12/31/2016'));
-	}
+	}*/
 }
 ?>
