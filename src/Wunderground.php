@@ -164,11 +164,7 @@ class Wunderground
             return $this->apiCall(Wunderground::CONDITIONS, 'CA/San_Francisco');
         }
 
-        if (empty($arg2)) {
-            $location = urlencode($arg1);
-        } else {
-            $location = urlencode($arg1) . '/' . urlencode($arg2);
-        }
+        return urlencode($arg1) . (empty($arg2) ? '/' . urlencode($arg2) : '';
 
         return $location;
     }
