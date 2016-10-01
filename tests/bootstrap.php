@@ -1,3 +1,3 @@
 <?php
 //require '../vendor/autoload.ph';
-require '../src/Wunderground.php';
+require __DIR__.'../src/Wunderground.php';
